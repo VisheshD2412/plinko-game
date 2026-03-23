@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# 🎮 Plinko Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, physics-based browser game inspired by classic Plinko mechanics, built with React, TypeScript, and Matter.js. Drop the ball, watch it bounce through the pegs, and win big!
 
-Currently, two official plugins are available:
+![Plinko Game](https://via.placeholder.com/800x400?text=Plinko+Game+Banner) *(Placeholder for actual game screenshot)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🎯 Physics-Based Gameplay**: Accurate and satisfying ball physics powered by Matter.js, simulating the chaotic and exciting nature of a real Plinko board.
+- **🕹️ Player-Controlled Drops**: Strategically position your "Plinko-stick" to find the perfect drop angle and target those high multipliers!
+- **🎲 Risk Levels & Reward Multipliers**: Choose your risk tolerance. Higher risk means a tougher board layout but massive potential reward multipliers. 
+- **🎰 Casino-Style Polish**: Immersive audiovisual design that brings the casino floor directly to your browser—vibrant colors, satisfying sound effects, and smooth animations.
+- **📈 Progression System**: Keep playing to build up streaks and unlock new features.
+- **🤖 Auto-Play**: Sit back and relax while the game drops the balls automatically for consistent gameplay.
+- **⚡ Modern Tech Stack**: Fast, responsive, and type-safe development using React, Vite, and TypeScript.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+- **[React 19](https://react.dev/)**: For building the interactive user interface.
+- **[TypeScript](https://www.typescriptlang.org/)**: For robust, type-safe code.
+- **[Vite](https://vitejs.dev/)**: For lightning-fast development, HMR, and optimized builds.
+- **[Matter.js](https://brm.io/matter-js/)**: For the physics engine handling the ball, pegs, and collisions.
+- **[Lucide React](https://lucide.dev/)**: For beautiful, crisp iconography.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Follow these steps to run the game locally on your machine.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+You will need **Node.js** (v18 or higher recommended) installed.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository** (if applicable) or navigate to the project directory:
+   ```bash
+   cd plinko-game
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Install the dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Play the game**: 
+   Open your browser and navigate to `http://localhost:5173` (or the URL provided in your terminal).
+
+## 🎮 How to Play
+
+1. **Select your Risk Level**: Choose between Low, Medium, or High risk.
+2. **Set your Wager/Bet**: Decide how much you want to drop.
+3. **Drop the Ball**: Click or tap at the top of the board to release the ball.
+4. **Watch and Win**: The ball will bounce off pegs; your payout is determined by the slot it lands in at the bottom!
+
+## 📜 Scripts
+
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Compiles TypeScript and builds the application for production.
+- `npm run lint`: Runs ESLint to check for code quality and formatting issues.
+- `npm run preview`: Previews the built production app locally.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
+
+## 📄 License
+
+This project is licensed under the MIT License.
