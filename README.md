@@ -2,7 +2,7 @@
 
 A modern, physics-based browser game inspired by classic Plinko mechanics, built with React, TypeScript, and Matter.js. Drop the ball, watch it bounce through the pegs, and win big!
 
-![Plinko Game](https://plinko-game1.vercel.app/) *(Placeholder for actual game screenshot)*
+![Plinko Game](https://plinko-game1.vercel.app/) *(https://raw.githubusercontent.com/VisheshD2412/plinko-game/refs/heads/main/plinko.png)*
 
 ## ✨ Features
 
